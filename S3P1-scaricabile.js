@@ -175,7 +175,9 @@ console.log ("")
 console.log("EXTRA 3")
 function codify(stringa) {
     let stringa2 = "code"
-    if (stringa === stringa2) {
+    let stringa3 = stringa.slice(0, 4)
+    if (stringa === stringa2 || stringa3 === stringa2)
+         {
         return (stringa)
     }
     else {
@@ -183,7 +185,7 @@ function codify(stringa) {
     }
 }
 
-let risultatoEx3 = codify(" ciao")
+let risultatoEx3 = codify("codeina")
 console.log(risultatoEx3)
 
 /* ESERCIZIO 4
@@ -197,7 +199,7 @@ console.log(risultatoEx3)
 console.log ("")
 console.log("EXTRA 4")
 function check3and7(n) {
-    if (n % 3 === 0 ||n % 7 === 0){
+    if ((n>0 && n % 3 === 0) || (n>0 && n % 7 === 0)){
         return (true)
     }
     return (false)
